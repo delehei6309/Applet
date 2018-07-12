@@ -16,7 +16,7 @@
         </view>
         <view class="items">
             <block wx:for="{{items}}">
-                <view class="item">
+                <view class="item" catchtap="link">
                     <view class="item-icon">
                         <image src="{{item.icon}}"></image>
                     </view>
@@ -26,8 +26,11 @@
                         <view>{{item.telephone}}</view>
                         <view>{{item.distance}}</view>
                     </view>
-                    <view class="item-position">
-                        click
+                    <view class="item-position" bindtap="getLocation">
+                        <view class="icon">
+                            <image src="../../images/loca.png"></image>
+                        </view>
+                        <view class="txt">一键导航</view>
                     </view>
                 </view>
             </block>

@@ -44,6 +44,15 @@
 }
 .footer .items .item .item-position{
 	flex:0;
+	text-align: center;
+}
+.item-position .icon{
+	width:152rpx;
+	margin-bottom: 10rpx;
+}
+.item-position .icon image{
+	width:40rpx;
+	height:40rpx;
 }
 .userinfo-avatar {
   	width: 128rpx;

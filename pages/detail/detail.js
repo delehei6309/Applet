@@ -4,40 +4,7 @@ const app = getApp()
 
 Page({
     data: {
-        motto: 'Hello World',
-        userInfo: {},
-        hasUserInfo: false,
-        canIUse: wx.canIUse('button.open-type.getUserInfo'),
-        imgUrls: [
-          'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-          'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-          'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-        ],
-        indicatorDots: false,
-        autoplay: false,
-        interval: 5000,
-        duration: 1000,
-        items:[
-            {
-                name:'华北电力大学',
-                score:5,
-                telephone:'5405555',
-                distance:'333km',
-                icon:'https://image.flaticon.com/icons/png/128/998/998664.png'
-            },{
-                name:'清华大学',
-                score:5,
-                telephone:'5405555',
-                distance:'333km',
-                icon:'https://image.flaticon.com/icons/png/128/998/998664.png'
-            },{
-                name:'北京大学',
-                score:5,
-                telephone:'5405555',
-                distance:'333km',
-                icon:'https://image.flaticon.com/icons/png/128/998/998664.png'
-            }
-        ]
+        
     },
     //事件处理函数
     bindViewTap: function() {
@@ -87,11 +54,6 @@ Page({
             longitude: 115.788204,
             scale: 28
         });
-    },
-    link(){
-        wx.navigateTo({
-          url: '../detail/detail'
-        })
     }
     
 })
