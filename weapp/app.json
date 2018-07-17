@@ -1,0 +1,15 @@
+{
+	"pages": [
+		"pages/list/list",
+		"pages/details/details",
+		"pages/auth-location/auth-location",
+		"pages/index/index",
+		"pages/logs/logs"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "猴哥挪车",
+		"navigationBarTextStyle": "black"
+	}
+}

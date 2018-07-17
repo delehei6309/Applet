@@ -1,34 +1,19 @@
-# 小程序
+# nearby-company
 
-> A WeChat project
+<img src="./screenshot/list.jpg" width="360"/>
 
-## Build Setup
-
-
-
-## 代码规范
-
-### 目录结构
-
-* 如pages/ 下所示
-
-```javascript
-	index/
-	detail/
-```
-
-### 命名规则
-
-
-### 样式书写规则
-
-### 代码编写规范
-
-* 统一缩进4个空格
-
-
-###  服务端通信
+<img src="./screenshot/details.jpg" width="360"/>
 
 
 
+## API 
 
+- [文档地址 API](./API.md)
+- [文档地址 API - V2](./API - V2.md)
+
+线上地址
+- https://wx.hougeauto.com/app/info?id=5&latitude=39.90469&longitude=116.40717
+- https://wx.hougeauto.com/app/lists?latitude=39.90469&longitude=116.40717&name=%E5%85%AC%E5%8F%B8
+
+
+by ShenBao 2018.07.17

@@ -1,0 +1,35 @@
+{
+  "name": "nearby-company",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "img": "gulp img",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShenBao/weapp-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShenBao/weapp-demo/issues"
+  },
+  "homepage": "https://github.com/ShenBao/weapp-demo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "fs-extra": "^6.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0",
+    "minimist": "^1.2.0"
+  }
+}

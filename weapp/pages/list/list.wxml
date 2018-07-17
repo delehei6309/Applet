@@ -1,0 +1,62 @@
+<!--pages/list/list.wxml-->
+
+<block wx:if="{{ !isShowLoading }}">
+
+    <!-- 搜索 -->
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" confirm-type="search" class="weui-search-bar__input" placeholder="请输入关键字" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" bindconfirm="bindconfirmHandle" />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                    <icon type="clear" size="14"></icon>
+                </view>
+            </view>
+            <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                <icon class="weui-icon-search" type="search" size="14"></icon>
+                <view class="weui-search-bar__text">请输入关键字</view>
+            </label>
+        </view>
+    </view>
+
+    <!-- 轮播图 -->
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" indicator-color="#999" indicator-active-color="red">
+        <block wx:for="{{ banner }}" wx:key="index">
+            <swiper-item>
+                <image src="{{item}}" mode="aspectFill" />
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <!-- 列表 -->
+    <view class='shopitem' bindtap='toDetailsHandle' wx:for="{{ lists }}" wx:key="{{{ item.id }}" data-item='{{ item }}'>
+        <view class='shopicon'>
+            <image src="{{ item.icon }}"></image>
+        </view>
+
+        <view class="shopInfo">
+            <view class='name'>
+                {{ item.name }}
+            </view>
+            <view class='row'>评分：
+                <block wx:for="{{ [1,2,3,4,5] }}" wx:key="{{ starItem }}" wx:for-item="starItem">
+                    <block wx:if="{{ starItem <= item.score }}">
+                        <text class='iconfont icon-xin isstars'></text>
+                    </block>
+                    <block wx:else>
+                        <text class='iconfont icon-xin'></text>
+                    </block>
+                </block>
+            </view>
+            <view class='row'>电话：{{ item.tel }}</view>
+            <view class='row'>距离：{{ item.distance }}km</view>
+        </view>
+        <view class='location' catchtap='toOpenLocationHandle' data-item='{{ item }}'>
+            <view class='img'>
+                <text class='iconfont icon-daohang1'></text>
+            </view>
+            <view class='text'>一键导航</view>
+        </view>
+    </view>
+
+</block>

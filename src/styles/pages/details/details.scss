@@ -1,0 +1,111 @@
+/*
+ * @Author: ShenBao shenbaoone@gmail.com 
+ * @Date: 2018-07-17 21:48:19 
+ * @Last Modified by: ShenBao shenbaoone@gmail.com 
+ * @Last Modified time: 2018-07-17 21:48:19 
+*/
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+// 轮播图
+.swiper {
+    width: 100%;
+    height: 330rpx;
+    swiper-item {
+        width: 100%;
+        height: 330rpx;
+        image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.info {
+    padding: 0 20rpx;
+    .name {
+        font-size: 40rpx;
+        line-height: 70rpx;
+        color: #333333;
+    }
+    .stars {
+        color: #b3b3b3;
+        font-size: 24rpx;
+        .isstars {
+            color: #FF3B30;
+        }
+    }
+    .timer {
+        padding-bottom: 20rpx;
+        color: #b3b3b3;
+        font-size: 24rpx;
+    }
+}
+
+.phone-number {
+    padding: 15rpx 20rpx;
+    border-top: 1rpx solid #aaaaaa;
+    border-bottom: 1rpx solid #aaaaaa;
+    display: flex;
+    .text {
+        flex: 1;
+        padding: 10px 20rpx 10rpx 0;
+        font-size: 28rpx;
+        line-height: 36rpx;
+    }
+    .call {
+        width: 100rpx;
+        border-left: 1rpx solid #cccccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .iconfont {
+            font-size: 46rpx;
+            color: #242121;
+        }
+    }
+}
+
+.address {
+    padding: 12rpx 20rpx;
+    border-bottom: 20rpx solid #cccccc;
+    display: flex;
+    .text {
+        flex: 1;
+        padding: 15rpx 20rpx 15rpx 0;
+        font-size: 28rpx;
+        line-height: 40rpx;
+    }
+    .to {
+        width: 100rpx;
+        border-left: 1rpx solid #cccccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .iconfont {
+            font-size: 60rpx;
+            color: #242121;
+        }
+    }
+}
+
+.introduce-title {
+    border-bottom: 1rpx solid #aaaaaa;
+    padding: 20rpx;
+    font-size: 30rpx;
+}
+
+.introduce-content {
+    padding: 30rpx 20rpx 100rpx;
+    font-size: 30rpx;
+    .row {
+        padding-bottom: 30rpx;
+        text-indent: 60rpx;
+        font-size: 30rpx;
+    }
+}
